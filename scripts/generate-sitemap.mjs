@@ -9,7 +9,7 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.resolve(__dirname, '..');
 
 // 获取基础URL
-const baseUrl = process.env.VITE_VERCEL_URL ? `https://${process.env.VITE_VERCEL_URL}` : 'https://it-tools.dev';
+const baseUrl = process.env.VITE_VERCEL_URL ?  'https://it-tools-pro.wwkejishe.top': 'https://it-tools.dev';
 
 async function generateSitemap() {
   try {
