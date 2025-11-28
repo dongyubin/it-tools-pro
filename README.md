@@ -1,150 +1,122 @@
-<picture>
-    <source srcset="./.github/logo-dark.png" media="(prefers-color-scheme: light)">
-    <source srcset="./.github/logo-white.png" media="(prefers-color-scheme: dark)">
-    <img src="./.github/logo-dark.png" alt="logo">
-</picture>
+# IT Tools Pro
 
-<p align="center">
-Useful tools for developer and people working in IT. <a href="https://it-tools.tech">Try it!</a>
-</p>
+## 简介
 
+IT Tools Pro 是一个为开发者和IT工作者提供实用工具的网站。这个网站使用 ❤ 制作，聚合了各种对开发者有用的工具。如果你觉得它有用，请分享给你认为可能需要的人，并将其添加到你的快捷栏中！
 
-## Sponsors
+## 特点
 
-<div align="center" markdown="1">
-<p align="center">
-  IT-Tools is proudly sponsored by:
-</p>
+- **客户端处理**：大多数工具都在客户端运行，保护你的隐私
+- **多语言支持**：支持多种语言，包括中文、英语、德语、西班牙语、法语、挪威语、葡萄牙语、乌克兰语、越南语等
+- **响应式设计**：适配各种屏幕尺寸，从移动设备到桌面设备
+- **开源免费**：基于 GPL-3.0 许可证开源，永远免费使用
 
-<a href="https://go.warp.dev/it-tools">
-  <img alt="Warp sponsorship" width="400" src="https://raw.githubusercontent.com/warpdotdev/brand-assets/refs/heads/main/Github/Sponsor/Warp-Github-LG-01.png">
-</a>
+## 技术栈
 
-### [Warp, built for coding with multiple AI agents.](https://go.warp.dev/it-tools)
-[Available for MacOS, Linux, & Windows](https://go.warp.dev/it-tools)<br>
+- **前端框架**：Vue.js (Vue 3)
+- **UI组件库**：Naive UI
+- **部署平台**：Vercel
+- **其他技术**：TypeScript、Vite、UnoCSS 等
 
-</div>
+## 工具分类
 
-## Functionalities and roadmap
+### 密码与安全
+- 密码强度分析器
+- Bcrypt 哈希生成器
+- 令牌生成器
+- RSA 密钥对生成器
+- 加密/解密工具
+- HMAC 生成器
 
-Please check the [issues](https://github.com/CorentinTh/it-tools/issues) to see if some feature listed to be implemented.
+### 转换器
+- 颜色转换器
+- JSON 相关工具（格式化、压缩、转换）
+- YAML 相关工具
+- TOML 相关工具
+- XML 相关工具
+- Base64 编码/解码器
+- 大小写转换器
 
-You have an idea of a tool? Submit a [feature request](https://github.com/CorentinTh/it-tools/issues/new/choose)!
+### Web 开发
+- URL 编码/解码器
+- HTML 实体转换
+- CSS 工具
+- SVG 占位符生成器
+- Open Graph 元标签生成器
 
-## Self host
+### 图片与视频
+- 相机录制器
+- QR 码生成器
+- WiFi QR 码生成器
 
-Self host solutions for your homelab
+### 开发工具
+- Git 备忘单
+- HTTP 状态码
+- SQL 格式化
+- Cron 表达式生成器
+- 基准测试构建器
+- 正则表达式测试器
 
-**From docker hub:**
+### 网络工具
+- IP 地址工具（IPv4/IPv6）
+- MAC 地址生成器
+- 用户代理解析器
+- 网络端口生成器
 
-```sh
-docker run -d --name it-tools --restart unless-stopped -p 8080:80 corentinth/it-tools:latest
-```
+### 数学工具
+- 百分比计算器
+- 数学表达式计算器
+- 温度转换器
 
-**From github packages:**
+### 测量工具
+- 计时器
+- ETA 计算器
 
-```sh
-docker run -d --name it-tools --restart unless-stopped -p 8080:80 ghcr.io/corentinth/it-tools:latest
-```
+### 文本工具
+- 文本统计
+- 文本差异比较
+- 字符串混淆器
+- 文本到二进制转换
+- 文本到 Unicode 转换
+- Markdown 到 HTML 转换
+-  Lorem Ipsum 生成器
 
-**Other solutions:**
+### 数据处理
+- JSON 差异比较
+- CSV 转换工具
+- 列表转换器
 
-- [Cloudron](https://www.cloudron.io/store/tech.ittools.cloudron.html)
-- [Tipi](https://www.runtipi.io/docs/apps-available)
-- [Unraid](https://unraid.net/community/apps?q=it-tools)
+## 如何使用
 
-## Contribute
+访问 [IT Tools Pro](https://it-tools-pro.wwkejishe.top/) 即可使用所有工具。所有工具都可以直接在浏览器中使用，无需安装任何软件。
 
-### Recommended IDE Setup
+## 贡献
 
-[VSCode](https://code.visualstudio.com/) with the following extensions:
+如果你发现了 bug 或者有新功能建议，欢迎在 [GitHub Issues](https://github.com/dongyubin/it-tools-pro/issues/new/choose) 中提交。
 
-- [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur)
-- [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-- [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)
+如果你想贡献代码，可以按照以下步骤操作：
 
-with the following settings:
+1. Fork 本仓库
+2. 创建你的特性分支 (`git checkout -b feature/AmazingFeature`)
+3. 提交你的更改 (`git commit -m 'Add some AmazingFeature'`)
+4. 推送到分支 (`git push origin feature/AmazingFeature`)
+5. 打开一个 Pull Request
 
-```json
-{
-  "editor.formatOnSave": false,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
-  "i18n-ally.localesPaths": ["locales", "src/tools/*/locales"],
-  "i18n-ally.keystyle": "nested"
-}
-```
+## 支持
 
-### Type Support for `.vue` Imports in TS
+IT Tools Pro 是开源免费的，但维护和域名续费需要一定的费用。如果你想支持这个项目的发展，可以通过以下方式赞助：
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+- [Buy me a coffee](https://www.buymeacoffee.com/dongyubin)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## 许可证
 
-1. Disable the built-in TypeScript Extension
-   1. Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-   2. Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+本项目采用 [GPL-3.0 许可证](LICENSE)。
 
-### Project Setup
+## 联系方式
 
-```sh
-pnpm install
-```
+- GitHub: [dongyubin](https://github.com/dongyubin)
+- Twitter: [IT Tools Pro](https://x.com/wwkjs666)
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-pnpm dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-pnpm build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-pnpm test
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-pnpm lint
-```
-
-### Create a new tool
-
-To create a new tool, there is a script that generate the boilerplate of the new tool, simply run:
-
-```sh
-pnpm run script:create:tool my-tool-name
-```
-
-It will create a directory in `src/tools` with the correct files, and a the import in `src/tools/index.ts`. You will just need to add the imported tool in the proper category and develop the tool.
-
-## Contributors
-
-Big thanks to all the people who have already contributed!
-
-[![contributors](https://contrib.rocks/image?repo=corentinth/it-tools&refresh=1)](https://github.com/corentinth/it-tools/graphs/contributors)
-
-## Credits
-
-Coded with ❤️ by [Corentin Thomasset](https://corentin.tech?utm_source=it-tools&utm_medium=readme).
-
-This project is continuously deployed using [vercel.com](https://vercel.com).
-
-Contributor graph is generated using [contrib.rocks](https://contrib.rocks/preview?repo=corentinth/it-tools).
-
-<a href="https://www.producthunt.com/posts/it-tools?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-it&#0045;tools" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=345793&theme=light" alt="IT&#0032;Tools - Collection&#0032;of&#0032;handy&#0032;online&#0032;tools&#0032;for&#0032;devs&#0044;&#0032;with&#0032;great&#0032;UX | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-<a href="https://www.producthunt.com/posts/it-tools?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-it&#0045;tools" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/top-post-badge.svg?post_id=345793&theme=light&period=daily" alt="IT&#0032;Tools - Collection&#0032;of&#0032;handy&#0032;online&#0032;tools&#0032;for&#0032;devs&#0044;&#0032;with&#0032;great&#0032;UX | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
-
-## License
-
-This project is under the [GNU GPLv3](LICENSE).
+感谢使用 IT Tools Pro！ 🚀
