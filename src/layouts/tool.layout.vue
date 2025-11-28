@@ -35,9 +35,9 @@ const toolDescription = computed<string>(() => t(`tools.${i18nKey.value}.descrip
     <div class="tool-layout">
       <div class="tool-header">
         <div flex flex-nowrap items-center justify-between>
-          <n-h1>
+          <n-h3>
             {{ toolTitle }}
-          </n-h1>
+          </n-h3>
 
           <div>
             <FavoriteButton :tool="{ name: route.meta.name, path: route.path } as Tool" />

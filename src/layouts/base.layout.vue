@@ -38,9 +38,9 @@ const tools = computed<ToolCategory[]>(() => [
       <RouterLink to="/" class="hero-wrapper">
         <HeroGradient class="gradient" />
         <div class="text-wrapper">
-          <div class="title">
+          <h1 class="title">
             IT - TOOLS - Pro
-          </div>
+          </h1>
           <div class="divider" />
           <div class="subtitle">
             {{ $t('home.subtitle') }}

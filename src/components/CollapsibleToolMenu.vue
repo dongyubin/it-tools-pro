@@ -51,9 +51,9 @@ const themeVars = useThemeVars();
         <icon-mdi-chevron-right />
       </span>
 
-      <span ml-8px text-13px>
+      <h2 ml-8px text-13px>
         {{ name }}
-      </span>
+      </h2>
     </div>
 
     <n-collapse-transition :show="!isCollapsed">
