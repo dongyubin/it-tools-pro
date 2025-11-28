@@ -1,5 +1,6 @@
 import { resolve } from 'node:path';
 import { URL, fileURLToPath } from 'node:url';
+import { Readable } from 'stream';
 
 import VueI18n from '@intlify/unplugin-vue-i18n/vite';
 import vue from '@vitejs/plugin-vue';
@@ -97,6 +98,7 @@ export default defineConfig({
       resolvers: [NaiveUiResolver(), IconsResolver({ prefix: 'icon' })],
     }),
     Unocss(),
+    // 我们将sitemap生成逻辑移到构建后脚本中，避免动态导入导致的问题
   ],
   base: baseUrl,
   resolve: {
